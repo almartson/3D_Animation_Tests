@@ -1195,7 +1195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a614293d45f75e8208c254dd62059923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 1042313178}
+  _animator: {fileID: 1513790267}
   _button: {fileID: 11400004, guid: c701c0bd8875d6f37a6bdbfbfcf6a627, type: 3}
 --- !u!114 &1431410008
 MonoBehaviour:
@@ -1734,6 +1734,10 @@ PrefabInstance:
       propertyPath: Velocity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7635726066119915157, guid: bd6ee82c5e06b3f4f86113cbf8261ae1, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 67d0078a178be593894c1dac17dde80c, type: 2}
     - target: {fileID: 7635726066119915157, guid: bd6ee82c5e06b3f4f86113cbf8261ae1, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1
