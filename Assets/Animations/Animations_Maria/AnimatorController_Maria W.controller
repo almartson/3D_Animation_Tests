@@ -197,7 +197,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Maria W - Animator Controller
+  m_Name: AnimatorController_Maria W
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Idle
