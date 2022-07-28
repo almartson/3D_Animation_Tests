@@ -447,7 +447,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AnimatorController_Jamo_CustomAlec
+  m_Name: AnimatorController_Jamo_CustomAlec 1
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Blend
