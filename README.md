@@ -1,4 +1,4 @@
-# 3D Animation Tests
+# :movie_camera: 3D Animation Tests
 
 ---
 
@@ -23,10 +23,10 @@ This project is an implementation of what *Jason Weimann* teaches us in his Tuto
 
 The subject studied in this project consists of two main parts:
 
-1. **Simple 3D Animations** (i.e.: Animations implemented in the 'Base Layer' of the Animator Controller).
-2. **Animation Layers** (two or more Layers are used in the Animator Controller, which allows us to implement mixed scenarios such as: *Running* and at the same time  *waving with the right hand to say 'Hello'*, *throwing an object*, etc.)
+1. :low_brightness: **Simple 3D Animations** (i.e.: Animations implemented in the 'Base Layer' of the Animator Controller).
+2. :low_brightness: **Animation Layers** (two or more Layers are used in the Animator Controller, which allows us to implement mixed scenarios such as: *Running* and at the same time  *waving with the right hand to say 'Hello'*, *throwing an object*, etc.)
 
-* **Special remark:** If you use Mixamo Animations, don't forget to set your 3D Model (i.e.: the *FBX file* in the 'Project View', inside the Unity Editor) with the setting *Type of Avatar*   ->   'Humanoid', and create an Avatar from that model with that  specific setting. Then keep in mind that also ALL your Animations (FBX downloaded from Mixamo, or Animations Clips) MUST be of the same type: 'Humanoid'. If you forget this rule, and try and **mix animations** (for instance tow or more animation layers...) based on the *'Generic'* and *'Humanoid'* type of avatar together: you will run into problems: your animations won't play together, and most likely you get just one group of the animation working, in a weird and unexpected way.
+* :low_brightness: **Special remark:** If you use Mixamo Animations, don't forget to set your 3D Model (i.e.: the *FBX file* in the 'Project View', inside the Unity Editor) with the setting *Type of Avatar*   ->   'Humanoid', and create an Avatar from that model with that  specific setting. Then keep in mind that also ALL your Animations (FBX downloaded from Mixamo, or Animations Clips) MUST be of the same type: 'Humanoid'. If you forget this rule, and try and **mix animations** (for instance tow or more animation layers...) based on the *'Generic'* and *'Humanoid'* type of avatar together: you will run into problems: your animations won't play together, and most likely you get just one group of the animation working, in a weird and unexpected way.
 
 * :bulb: **In short**: Set every FBX (3D Model and Animations) as 'Humanoid'... or as a 'Generic', but don't mix the two Types together, or it won't work.
 
