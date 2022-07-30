@@ -26,19 +26,18 @@ This project is an implementation of what *Jason Weimann* teaches us in his Tuto
 
 </div>
 
----
 
-<center>
+<div align="center">
 
 | ![Animation Layers](./MediaForTheReadme/GIFs/Video3DAnimationsCropped_GIF_2_JammoRobot_AnimationLayers_2.gif) |
 |:--:|
 | <b>Animation Layers</b>|
 
-</center>
+</div>
 
 ---
 
-##### :bulb: What did I learn by making this scene?
+##### :bulb: What did I learn?
 
 The subject studied in this project consists of two main parts:
 
@@ -67,7 +66,7 @@ The subject studied in this project consists of two main parts:
 
 
 * **Made With Unity3D version**: 2020.3.36f1 LTS
-* **O.S.**: Xubuntu 20.04.01
+* **O.S.**: Xbuntu 20.04.1 LTS
 * **IDE**: JetBrains Rider version 2022.1
 
 
