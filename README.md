@@ -50,7 +50,7 @@ The subject studied in this project consists of two main parts:
 
 ---
 
-##### Tools, Assets & Resources used in this scene
+##### :dvd: Tools, Assets & Resources used in this scene
 
 * Main Tutorial I followed   ->   [Animations with Layers in Unity3D - Unity Devs WATCH THIS - YouTube](https://www.youtube.com/watch?v=Qwy3rEDXqxA&list=PLB5_EOMkLx_VpmokLusiftsmI1s9Cy_pO)
 * Mixamo Animations Website   ->  [Mixamo](https://www.mixamo.com/)
