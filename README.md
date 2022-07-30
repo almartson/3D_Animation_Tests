@@ -18,15 +18,23 @@ This project is an implementation of what *Jason Weimann* teaches us in his Tuto
 
 ---
 
+<center>
+
 | ![Simple Animations](./MediaForTheReadme/GIFs/Video3DAnimationsCropped_GIF_1_Maria_SimpleAnimations_1.gif) |
 |:--:|
 | <b>Simple Animations</b>|
 
+</center>
+
 ---
+
+<center>
 
 | ![Animation Layers](./MediaForTheReadme/GIFs/Video3DAnimationsCropped_GIF_2_JammoRobot_AnimationLayers_2.gif) |
 |:--:|
 | <b>Animation Layers</b>|
+
+</center>
 
 ---
 
