@@ -17,6 +17,13 @@ It is a series of simple experiments, (a work in progress), about *3D Animations
 This project is an implementation of what *Jason Weimann* teaches us in his Tutorial:   ->    [Animations with Layers in Unity3D - Unity Devs WATCH THIS - YouTube](https://www.youtube.com/watch?v=Qwy3rEDXqxA&list=PLB5_EOMkLx_VpmokLusiftsmI1s9Cy_pO)
 
 ---
+
+![Simple Animations](./MediaForTheReadme/GIFs/Video3DAnimationsCropped_GIF_1_Maria_SimpleAnimations_1.gif)
+
+---
+
+![Animation Layers](./MediaForTheReadme/GIFs/Video3DAnimationsCropped_GIF_2_JammoRobot_AnimationLayers_2.gif)
+
 ---
 
 ##### :bulb: What did I learn by making this scene?
