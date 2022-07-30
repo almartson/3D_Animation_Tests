@@ -16,6 +16,8 @@ It is a series of simple experiments, (a work in progress), about *3D Animations
 
 This project is an implementation of what *Jason Weimann* teaches us in his Tutorial:   ->    [Animations with Layers in Unity3D - Unity Devs WATCH THIS - YouTube](https://www.youtube.com/watch?v=Qwy3rEDXqxA&list=PLB5_EOMkLx_VpmokLusiftsmI1s9Cy_pO)
 
+<iframe src="https://www.youtube.com/embed/Qwy3rEDXqxA?list=PLB5_EOMkLx_VpmokLusiftsmI1s9Cy_pO" height="113" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.76991 / 1; width: 100%; height: 100%;"></iframe>
+
 ---
 
 <div align="center">
