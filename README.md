@@ -63,7 +63,7 @@ The subject studied in this project consists of two main parts:
 
 
 * **Made With Unity3D version**: 2020.3.36f1 LTS
-* **O.S.**: Xbuntu 20.04.1 LTS
+* **O.S.**: Xubuntu 20.04.1 LTS
 * **IDE**: JetBrains Rider version 2022.1
 
 
