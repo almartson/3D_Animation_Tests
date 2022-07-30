@@ -36,9 +36,9 @@ The subject studied in this project consists of two main parts:
 
 * Main Tutorial I followed   ->   [Animations with Layers in Unity3D - Unity Devs WATCH THIS - YouTube](https://www.youtube.com/watch?v=Qwy3rEDXqxA&list=PLB5_EOMkLx_VpmokLusiftsmI1s9Cy_pO)
 * Mixamo Animations Website   ->  [Mixamo](https://www.mixamo.com/)
-* :robot: Special mention to the Robot I used (I really liked it : )   ->   
+* :robot: Special mention to the Robot I used (I really liked it, it's a Free Asset by the way : )   ->   
     * [GitHub - mixandjam/Jammo-Character: Official repository for the Jammo character from the Mix and Jam channel!](https://github.com/mixandjam/Jammo-Character)
-    * In the ASSET STORE:   ->   [Jammo Character | Mix and Jam | 3D Characters | Unity Asset Store](https://assetstore.unity.com/packages/3d/characters/jammo-character-mix-and-jam-158456)
+    * [Unity Asset Store | Jammo Character | Mix and Jam | 3D Characters](https://assetstore.unity.com/packages/3d/characters/jammo-character-mix-and-jam-158456)
 
 
 ---
