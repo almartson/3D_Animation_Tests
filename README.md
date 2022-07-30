@@ -18,13 +18,13 @@ This project is an implementation of what *Jason Weimann* teaches us in his Tuto
 
 ---
 
-<center>
+<div align="center">
 
 | ![Simple Animations](./MediaForTheReadme/GIFs/Video3DAnimationsCropped_GIF_1_Maria_SimpleAnimations_1.gif) |
 |:--:|
 | <b>Simple Animations</b>|
 
-</center>
+</div>
 
 ---
 
