@@ -14,13 +14,13 @@ It is a series of simple experiments, (a work in progress), about *3D Animations
 #### 1.1- Scene: :video_game: **Scene_1_AnimationsWithLayers_JasonW 1.unity**
 
 
-This project is an implementation of what *Jason Weimann* teaches us in his Tutorial:   ->    ![Animations with Layers in Unity3D - Unity Devs WATCH THIS - YouTube](https://www.youtube.com/watch?v=Qwy3rEDXqxA&list=PLB5_EOMkLx_VpmokLusiftsmI1s9Cy_pO)
+This project is an implementation of what *Jason Weimann* teaches us in his Tutorial:
 
 <div align="center">
 
-| [![Animations with Layers in Unity3D - Unity Devs WATCH THIS - YouTube](https://img.youtube.com/vi/Qwy3rEDXqxA/0.jpg)](https://www.youtube.com/watch?v=Qwy3rEDXqxA "Animations with Layers in Unity3D - Unity Devs WATCH THIS - YouTube") |
+| <b> [Animations with Layers in Unity3D - Unity Devs WATCH THIS - YouTube](https://www.youtube.com/watch?v=Qwy3rEDXqxA&list=PLB5_EOMkLx_VpmokLusiftsmI1s9Cy_pO) </b> |
 |:--:|
-| <b>Animations with Layers in Unity3D - Unity Devs WATCH THIS - YouTube</b> |
+| [![Animations with Layers in Unity3D - Unity Devs WATCH THIS - YouTube](https://img.youtube.com/vi/Qwy3rEDXqxA/0.jpg)](https://www.youtube.com/watch?v=Qwy3rEDXqxA "Animations with Layers in Unity3D - Unity Devs WATCH THIS - YouTube") |
 
 </div>
 
