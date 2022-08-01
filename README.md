@@ -8,10 +8,10 @@ It is a series of simple experiments, (a work in progress), about *3D Animations
 
 ---
 
-### 1- Simple Animations & Animation Layers 
+## 1- Simple Animations & Animation Layers 
 
 
-#### 1.1- Scene: :video_game: **Scene_1_AnimationsWithLayers_JasonW 1.unity**
+### :video_game: 1.1- Scene: **Scene_1_AnimationsWithLayers_JasonW 1.unity**
 
 
 This project is an implementation of what [*Jason Weimann* teaches us in his Tutorial:](https://www.youtube.com/watch?v=Qwy3rEDXqxA&list=PLB5_EOMkLx_VpmokLusiftsmI1s9Cy_pO)
@@ -36,7 +36,7 @@ This project is an implementation of what [*Jason Weimann* teaches us in his Tut
 
 ---
 
-##### :bulb: What did I learn?
+#### :bulb: What did I learn?
 
 The subject studied in this project consists of two main parts:
 
@@ -50,7 +50,7 @@ The subject studied in this project consists of two main parts:
 
 ---
 
-##### :dvd: Tools, Assets & Resources used in this scene
+#### :dvd: Tools, Assets & Resources used in this scene
 
 * Main Tutorial I followed:   [ [Animations with Layers in Unity3D - Unity Devs WATCH THIS - YouTube](https://www.youtube.com/watch?v=Qwy3rEDXqxA&list=PLB5_EOMkLx_VpmokLusiftsmI1s9Cy_pO) ]
 * Mixamo Animations Website:  [ [Mixamo](https://www.mixamo.com/) ]
@@ -62,7 +62,7 @@ The subject studied in this project consists of two main parts:
 ---
 
 
-##### Specs:
+## Specs:
 
 
 * **Made With Unity3D version >=** 2020.3.36f1 LTS.
@@ -71,7 +71,7 @@ The subject studied in this project consists of two main parts:
 * **IDE**: JetBrains Rider version 2022.1
 
 
-##### Version control specs: 
+## Version control specs: 
 
 * **Git Client**: GitKraken: 8.7.0
 * This Repository is set with: *Git Large File Storage* (**Git-LFS**), as part of the learning & experiment (see .gitattributes).
