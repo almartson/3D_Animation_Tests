@@ -66,15 +66,15 @@ The subject studied in this project consists of two main parts:
 
 
 * **Made With Unity3D version >=** 2020.3.36f1 LTS.
-* **UnityYAMLMerge** (tool for merging scene and prefab files) included in the Unity3D Editor, it's configuration is in the .gitignore file.
+* **UnityYAMLMerge** (tool for merging scene and prefab files) included in the Unity3D Editor, it's configuration is in the .gitconfig and .gitattributes files.
 * **O.S.**: Xubuntu 20.04.1 LTS.
 * **IDE**: JetBrains Rider version 2022.1
 
 ##### Version control specs: 
 
-* Git GUI software used: GitKraken Client: 8.7.0
-* This Repository is set with: *Git Large File Storage* (Git-LFS), as part of the learning & experiment.
-* Using File Locking feature.
+* **Git Client**: GitKraken: 8.7.0
+* This Repository is set with: *Git Large File Storage* (**Git-LFS**), as part of the learning & experiment (see .gitattributes).
+    * Using **File Locking** feature.
     * **Git-lfs** version **>=** 2.9.2 (GitHub; linux amd64; go 1.13.5)
     * **Git** version **>=** 2.37.1
 
