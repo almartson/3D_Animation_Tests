@@ -68,8 +68,8 @@ The subject studied in this project consists of two main parts:
 
 * **Made With Unity3D version >=** 2020.3.36f1 LTS.
 * **UnityYAMLMerge** (tool for merging scene and prefab files) included in the Unity3D Editor, it's configuration is in the .gitconfig and .gitattributes files.
-* **O.S.**: Xubuntu 20.04.1 LTS.
 * **IDE**: JetBrains Rider version 2022.1
+* **O.S.**: Xubuntu 20.04.1 LTS.
 
 
 ## Version control specs: 
