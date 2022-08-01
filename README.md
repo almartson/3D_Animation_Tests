@@ -70,6 +70,7 @@ The subject studied in this project consists of two main parts:
 * **O.S.**: Xubuntu 20.04.1 LTS.
 * **IDE**: JetBrains Rider version 2022.1
 
+
 ##### Version control specs: 
 
 * **Git Client**: GitKraken: 8.7.0
@@ -77,6 +78,7 @@ The subject studied in this project consists of two main parts:
     * Using **File Locking** feature.
     * **Git-lfs** version **>=** 2.9.2 (GitHub; linux amd64; go 1.13.5)
     * **Git** version **>=** 2.37.1
+
 
 ---
 
