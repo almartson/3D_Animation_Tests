@@ -4,7 +4,7 @@
 
 ## What is this Project?
 
-It is a series of simple experiments, (a work in progress), about **3D Animations**. It is made with Unity3D, just for the fun of it and as a part of my self-learning journey.
+It is a series of simple experiments, (a work in progress), about :movie_camera: **3D Animations** :cinema:. It is made with Unity3D, just for the fun of it and as a part of my self-learning journey.
 
 ---
 
