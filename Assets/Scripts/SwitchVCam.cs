@@ -17,7 +17,13 @@ public class SwitchVCam : MonoBehaviour
     
     [SerializeField]
     private int _cameraPriorityBoostAmount = 10;
+    
+    // UI - GUI
 
+    [SerializeField] private Canvas _thirdPersonPlayerUICanvas;
+
+    [SerializeField] private Canvas _zoomAimPlayerUICanvas;
+    
 
     private void Awake()
     {
@@ -46,6 +52,12 @@ public class SwitchVCam : MonoBehaviour
         // Rise (Boost) the Camera's priority by a high number, (like 10 for example), for it to be shown WITH PRIORITY, even if there is another out there (like the Moving 3rd Person Cinemachine Virtual Camera):
         //
         _virtualCamera.Priority += _cameraPriorityBoostAmount;
+
+        // GUI - UI Canvas
+        //
+        _zoomAimPlayerUICanvas.enabled = true;
+        //
+        _thirdPersonPlayerUICanvas.enabled = false;
     }
     
     private void CancelAim()
@@ -53,6 +65,12 @@ public class SwitchVCam : MonoBehaviour
         // Lower the Camera's priority by a high number, (like 10 for example), for it NOT to be shown WITH PRIORITY if there is another out there (like the Moving 3rd Person Cinemachine Virtual Camera). Trying to get it to a standard original base number (like 1, for example):
         //
         _virtualCamera.Priority -= _cameraPriorityBoostAmount;
+        
+        // GUI - UI Canvas
+        //
+        _zoomAimPlayerUICanvas.enabled = false;
+        //
+        _thirdPersonPlayerUICanvas.enabled = true;
     }
 
     
