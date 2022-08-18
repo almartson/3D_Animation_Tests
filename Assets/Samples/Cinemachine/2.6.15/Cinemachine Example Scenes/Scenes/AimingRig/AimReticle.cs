@@ -24,8 +24,8 @@ public class AimReticle : MonoBehaviour
     [Tooltip("Right piece of the aim reticle.")]
     public Image Right;
     
-    [Tooltip("This 2D object will be positioned in the game view over the raycast hit point, if any, "
-        + "or will remain in the center of the screen if no hit point is detected.  "
+    [Tooltip("This 2D object will be positioned in the game view over the raycast isThereABulletHit point, if any, "
+        + "or will remain in the center of the screen if no isThereABulletHit point is detected.  "
         + "May be null, in which case no on-screen indicator will appear. Same as Cinemachine3rdPersonAim's")]
     public RectTransform AimTargetReticle;
 

@@ -106,7 +106,7 @@ public class MoveAimTarget : MonoBehaviour
                 return true;
             }
 
-            // Ignore the hit.  Pull ray origin forward in front of obstacle
+            // Ignore the isThereABulletHit.  Pull ray origin forward in front of obstacle
             Ray inverseRay = new Ray(ray.GetPoint(rayLength), -ray.direction);
             if (!hitInfo.collider.Raycast(inverseRay, out hitInfo, rayLength))
                 break;

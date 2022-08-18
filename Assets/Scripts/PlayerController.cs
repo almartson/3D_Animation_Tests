@@ -22,6 +22,9 @@ public class PlayerController : MonoBehaviour
     private InputAction _playerMoveInputAction;
     [Tooltip("New Input System Actions List: Jump")]
     private InputAction _playerJumpInputAction;
+    [Tooltip("New Input System Actions List: Jump")]
+    private InputAction _playerShootInputAction;
+    
     // Move vectors
     private Vector3 _playerMoveVector3 = Vector3.zero;
     private Vector2 _inputControlAction = Vector2.zero;
@@ -29,6 +32,19 @@ public class PlayerController : MonoBehaviour
     // Rotation Speed parameter, in Degrees
     [Tooltip("Rotation Speed parameter, in Degrees")]
     [SerializeField] private float _playerRotationSpeed = 5.0f;
+    
+    // Shooting
+    //
+    [Tooltip("The Bullet's Prefab to get & Instantiate the GameObjects from")]
+    [SerializeField] private GameObject _playerBulletPrefab;
+    
+    [Tooltip("The Bullet's GameObject's Parent in the Hierarchy (for organizing, clean and neat)")]
+    [SerializeField] private Transform _playerBulletParentTransform;
+    
+    [Tooltip("The Gun's barrel Transform")]
+    [SerializeField] private Transform _gunBarrelTransform;
+
+    [SerializeField] private float _bulletHitMissDistance = 25.0f;
 
     
     private void Awake()
@@ -47,18 +63,29 @@ public class PlayerController : MonoBehaviour
             _mainCameraTransform = Camera.main.transform;
         }
         
-    }
-
-    
-    private void Start()
-    {
-    
         // 2- Get New Input System Action List:
         //
         _playerMoveInputAction = _playerInput.actions["Move"];
         _playerJumpInputAction = _playerInput.actions["Jump"];
-
+        _playerShootInputAction = _playerInput.actions["Shoot"];
     }
+
+    
+    private void OnEnable()
+    {
+        _playerShootInputAction.performed += _ => ShootGun();
+    }
+
+
+    private void OnDisable()
+    {
+        _playerShootInputAction.performed -= _ => ShootGun();
+    }
+
+
+    // private void Start()
+    // {
+    // }
 
     
     void Update()
@@ -116,4 +143,69 @@ public class PlayerController : MonoBehaviour
         transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, _playerRotationSpeed * Time.deltaTime);
 
     }// End Update
+    
+    
+    #region AlMartson's Custom Methods
+
+
+    /// <summary>
+    /// We'll use a Raycast to fake the shooting:
+    /// We will make it seem as a shot from the center of the Main Camera, towards the CENTER of the screen (using the Camera forward vector3 taken from its Transform). 
+    /// </summary>
+    private void ShootGun()
+    {
+        
+        // Bullet Prefab Instantiation:
+        // NOTE: TODO TO-DO: To make an OBJECT POOL for Optimizing this one:
+        //
+        GameObject bullet = GameObject.Instantiate(_playerBulletPrefab, _gunBarrelTransform.position, Quaternion.identity, _playerBulletParentTransform);
+            
+        // Optimization TO-DO TODO: Set this BulletController.cs as an Interface, and make sure ALL BULLETS ALWAYS have a Bullet Controller!!!
+        //
+        BulletController bulletController = bullet.GetComponent<BulletController>();
+
+        
+        RaycastHit raycastHit;
+        //
+        // We'll shoot the Raycast Vector3 from the Center of the Main Camera, forwards in a Straight Line (in Spanish: 'en una Linea Recta' ;)
+        //
+        if (Physics.Raycast(_mainCameraTransform.position, _mainCameraTransform.forward, out raycastHit,
+                Mathf.Infinity))
+        {
+
+            if (bulletController)
+            {
+                // Assign the Collision Object to my: Target (a Vector3 attribute)
+                //
+                bulletController.Target = raycastHit.point;
+                //
+                // State that there was a Collision: true
+                //
+                bulletController.isThereABulletHit = true;
+
+            }// End if (bulletController)
+        }
+        else
+        {
+            // No collision
+            //
+            if (bulletController)
+            {
+                // Assign the Collision Object to my: Target (a Vector3 attribute).
+                // PROBLEM: THere is NO COLLISION, so we are going to fake it: using the Camera forward vector3 + an ARBITRARY DISTANCE: we will say it disappear after travelling some distance...
+                //
+                bulletController.Target = _mainCameraTransform.position + _mainCameraTransform.forward * _bulletHitMissDistance;
+                //
+                // State that there was a Collision: true
+                //
+                bulletController.isThereABulletHit = false;
+
+            }// End if (bulletController)     
+            
+        }// End else of if (Physics.Raycast....) - Collision!
+        
+    }// End private void ShootGun()
+
+    #endregion AlMartson's Custom Methods
+    
 }
