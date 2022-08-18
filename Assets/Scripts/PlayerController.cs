@@ -68,6 +68,10 @@ public class PlayerController : MonoBehaviour
         _playerMoveInputAction = _playerInput.actions["Move"];
         _playerJumpInputAction = _playerInput.actions["Jump"];
         _playerShootInputAction = _playerInput.actions["Shoot"];
+        
+        // Lock the Mouse Cursor to the center of the screen:
+        //
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     
@@ -181,7 +185,7 @@ public class PlayerController : MonoBehaviour
                 //
                 // State that there was a Collision: true
                 //
-                bulletController.isThereABulletHit = true;
+                bulletController.IsThereABulletHit = true;
 
             }// End if (bulletController)
         }
@@ -198,7 +202,7 @@ public class PlayerController : MonoBehaviour
                 //
                 // State that there was a Collision: true
                 //
-                bulletController.isThereABulletHit = false;
+                bulletController.IsThereABulletHit = false;
 
             }// End if (bulletController)     
             

@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 37032013}
   m_Layer: 0
   m_Name: PlayerFace
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -585,7 +585,7 @@ GameObject:
   - component: {fileID: 318890801}
   m_Layer: 0
   m_Name: Gun
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1411,7 +1411,7 @@ GameObject:
   - component: {fileID: 1492385058}
   m_Layer: 0
   m_Name: Barrel
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

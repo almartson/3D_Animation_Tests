@@ -20,9 +20,17 @@ public class BulletController : MonoBehaviour
 
     [field: Tooltip("Boolean to say if the Bullet Hit a Target")]
     [SerializeField]
-    public bool isThereABulletHit { get; set; }
+    public bool IsThereABulletHit { get; set; }
 
+    /// <summary>
+    /// Used to test against Square Distances (for optimizing the Performance).
+    /// </summary>
     private float _zeroSquareThreshold = 0.01f;
+    
+    /// <summary>
+    /// Used for distance testing in very accurate cases.
+    /// </summary>
+    private float _zeroAccurateThreshold = 0.0001f;
 
 
     private void OnEnable()
@@ -41,7 +49,7 @@ public class BulletController : MonoBehaviour
         
         // Check to see if there is a Collision (Bullet vs. Target GameObject)
         //
-        if (!isThereABulletHit && ((transform.position - _target).sqrMagnitude < _zeroSquareThreshold))
+        if (!IsThereABulletHit && ((transform.position - _target).sqrMagnitude < _zeroSquareThreshold))
         {
             Destroy(gameObject);
             
@@ -56,7 +64,7 @@ public class BulletController : MonoBehaviour
         //
         // Instantiate the Bullet Decal in the Wall/Object where it is Colliding:
         //
-        GameObject.Instantiate(_bulletDecal, contactPoint.point, Quaternion.LookRotation(contactPoint.normal));
+        GameObject.Instantiate(_bulletDecal, contactPoint.point + contactPoint.normal * _zeroAccurateThreshold, Quaternion.LookRotation(contactPoint.normal));
         
         Destroy(gameObject);
     }
