@@ -200,7 +200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.642083
+      value: 1.156882
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalPosition.y
@@ -208,7 +208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.2540007
+      value: -7.224047
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalRotation.w
@@ -382,7 +382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.5186629
+      value: 2.7607179
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalPosition.y
@@ -390,7 +390,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.207853
+      value: -9.135586
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalRotation.w
@@ -759,7 +759,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470736998}
   m_LocalRotation: {x: 0.00868993, y: -0.0290542, z: 0.00025259514, w: 0.99954003}
-  m_LocalPosition: {x: 1.5186629, y: 2.71922, z: -9.207853}
+  m_LocalPosition: {x: 2.7607179, y: 2.71922, z: -9.135586}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1806,7 +1806,7 @@ Animator:
   m_GameObject: {fileID: 2117009760}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: a0236f682b188d64f8febde7209cfc6f, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 95e0c19c047a63556a2fc14406ddfc46, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
