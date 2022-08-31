@@ -45,35 +45,8 @@ public class PlayerControllerBasicCapsule : MonoBehaviour
     [SerializeField] private Transform _gunBarrelTransform;
 
     [SerializeField] private float _bulletHitMissDistance = 25.0f;
-    
-    
-    // Animations, Blend Trees & Animator Controller:
-    //
-    /// <summary>
-    /// 3D Character (Player)'s 'Animator Controller'
-    /// </summary>
-    private Animator _playerAnimator;
-    //
-    // References (constants) to Animator/Animations Parameters:
-    //
-    private static readonly int _MOVE_X_ANIMATION_PARAMETER_ID = Animator.StringToHash("MoveX");
-    //
-    private static readonly int _MOVE_Z_ANIMATION_PARAMETER_ID = Animator.StringToHash("MoveZ");
-    
-    // Smooth Damp Input System (for a smooth transitioning between each movement):
-    //
-    [Tooltip("Current Player Animations Blending Blending value")]
-    [SerializeField]
-    Vector2 _currentPlayerAnimationsRunStrafeBlendVector2;
-    //
-    [Tooltip("Current Player Animations Blending Velocity value")]
-    [SerializeField]
-    Vector2 _playerAnimationsRunStrafeVelocity;
-    //
-    [Tooltip("Current Player Animations Blending SMOOTH TIME value")]
-    [SerializeField] private float _playerAnimationRunStrafeSmoothTime = 0.1f;
 
-
+   
     private void Awake()
     {
         // Get this GameObject (GO) (Player's) Character Controller:
@@ -99,12 +72,6 @@ public class PlayerControllerBasicCapsule : MonoBehaviour
         // Lock the Mouse Cursor to the center of the screen:
         //
         Cursor.lockState = CursorLockMode.Locked;
-
-        
-        // ANIMATIONS (Animator Controller) setup:
-        //
-        _playerAnimator = GetComponent<Animator>();
-
     }
 
     
@@ -137,18 +104,9 @@ public class PlayerControllerBasicCapsule : MonoBehaviour
         // Get (New) input System's Control player actions:
         _inputControlAction = _playerMoveInputAction.ReadValue<Vector2>();
         //
-        // Move the Player's 3D Character (Animations Blending Tree) using the Smoothing Animations Blending CURRENT VALUE:
-        //
-        _currentPlayerAnimationsRunStrafeBlendVector2 = Vector2.SmoothDamp(_currentPlayerAnimationsRunStrafeBlendVector2, _inputControlAction, ref _playerAnimationsRunStrafeVelocity, _playerAnimationRunStrafeSmoothTime);
-        
-        
         // Set Input from Player (in a private variable):
         //
-        ////// ORIGINAL, before introducing Animations Blend Trees: _playerMoveVector3.Set(_inputControlAction.x, 0, _inputControlAction.y);
-        //
-        // Improvement with Animations: Move the Player according to SMOOTH (DAMPED) values, taking into consideration previous values of the Movement (and the previous Animation...):
-        //
-        _playerMoveVector3.Set(_currentPlayerAnimationsRunStrafeBlendVector2.x, 0, _currentPlayerAnimationsRunStrafeBlendVector2.y);
+        _playerMoveVector3.Set(_inputControlAction.x, 0, _inputControlAction.y);
         //
         // 1- MOVE PLAYER:
         // Take into account the Main Camera's Direction, when the Player is MOVING: if we press the Button (Control or Joystick) to move to the Right (for example), then it will move the Player to the RIGHT DIRECTION in relation to the CAMERA'S PERSPECTIVE: 
@@ -163,16 +121,6 @@ public class PlayerControllerBasicCapsule : MonoBehaviour
         // (Finally) Set the Movement, according to the Time between Frames (Time.deltaTime):
         //
         _playerCharacterController.Move(_playerMoveVector3 * (Time.deltaTime * _playerSpeed));
-        
-        // ANIMATIONS:
-        // Blend Strafe Animation
-        // x:
-        _playerAnimator.SetFloat(_MOVE_X_ANIMATION_PARAMETER_ID, _currentPlayerAnimationsRunStrafeBlendVector2.x);
-        //
-        // z:
-        _playerAnimator.SetFloat(_MOVE_Z_ANIMATION_PARAMETER_ID, _currentPlayerAnimationsRunStrafeBlendVector2.y);
-
-
 
         // 2- JUMP:
         // Changes the height position of the player..
