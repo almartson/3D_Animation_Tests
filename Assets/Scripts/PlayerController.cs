@@ -46,7 +46,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float _bulletHitMissDistance = 25.0f;
     
-    #region Animations Animator
+    
+    #region Animations
     
     // Animations, Blend Trees & Animator Controller:
     //
@@ -74,7 +75,8 @@ public class PlayerController : MonoBehaviour
     [Tooltip("Current Player Animations Blending SMOOTH TIME value. The Smaller the value, the Faster the transitions between different Input Actions (and Animations) will be")]
     [SerializeField] private float _playerAnimationRunStrafeSmoothTime = 0.1f;
 
-    #endregion Animations Animator
+    #endregion Animations
+
 
     private void Awake()
     {
