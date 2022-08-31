@@ -164,6 +164,7 @@ public class PlayerController : MonoBehaviour
         //
         _playerCharacterController.Move(_playerMoveVector3 * (Time.deltaTime * _playerSpeed));
         
+        
         // ANIMATIONS:
         // Blend Strafe Animation
         // x:
@@ -171,8 +172,7 @@ public class PlayerController : MonoBehaviour
         //
         // z:
         _playerAnimator.SetFloat(_MOVE_Z_ANIMATION_PARAMETER_ID, _currentPlayerAnimationsRunStrafeBlendVector2.y);
-
-
+        
 
         // 2- JUMP:
         // Changes the height position of the player..
