@@ -295,15 +295,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.270337
+      value: 2.1359093
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.4497359
+      value: 2.4497356
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.6349535
+      value: -4.862775
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalRotation.w
@@ -477,7 +477,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.8614242
+      value: 1.7546828
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalPosition.y
@@ -485,7 +485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.997782
+      value: -5.2239923
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalRotation.w
@@ -850,7 +850,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470736998}
   m_LocalRotation: {x: 0, y: -0.02905564, z: 0, w: 0.9995778}
-  m_LocalPosition: {x: 1.8614242, y: 2.2052069, z: -8.997782}
+  m_LocalPosition: {x: 1.7546828, y: 2.2052069, z: -5.2239923}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1802,7 +1802,7 @@ GameObject:
   - component: {fileID: 2117009761}
   - component: {fileID: 2117009765}
   - component: {fileID: 2117009767}
-  - component: {fileID: 2117009766}
+  - component: {fileID: 2117009768}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1881,7 +1881,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2117009760}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.47, z: -5.5}
+  m_LocalPosition: {x: 0, y: 1.47, z: -1.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 37032016}
@@ -1919,26 +1919,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 470737000}
---- !u!114 &2117009766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2117009760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9412608c98df31c0799385fbc689a678, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerSpeed: 5
-  _playerJumpHeight: 1
-  _gravityValue: -9.81
-  _playerRotationSpeed: 5
-  _playerBulletPrefab: {fileID: 2748455620641430202, guid: eafc5ee49b99ae5e8a46b3d01ad16875, type: 3}
-  _playerBulletParentTransform: {fileID: 488461531}
-  _gunBarrelTransform: {fileID: 1492385058}
-  _bulletHitMissDistance: 25
 --- !u!143 &2117009767
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1957,3 +1937,23 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2117009768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117009760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a42285e3b93ee263fa6be4eecae9a306, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerSpeed: 5
+  _playerJumpHeight: 1
+  _gravityValue: -9.81
+  _playerRotationSpeed: 8
+  _playerBulletPrefab: {fileID: 2748455620641430202, guid: eafc5ee49b99ae5e8a46b3d01ad16875, type: 3}
+  _playerBulletParentTransform: {fileID: 488461531}
+  _gunBarrelTransform: {fileID: 1492385058}
+  _bulletHitMissDistance: 25
