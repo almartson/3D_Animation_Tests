@@ -61,6 +61,10 @@ public class PlayerController : MonoBehaviour
     private static readonly int _MOVE_X_ANIMATION_PARAMETER_ID = Animator.StringToHash("MoveX");
     //
     private static readonly int _MOVE_Z_ANIMATION_PARAMETER_ID = Animator.StringToHash("MoveZ");
+    //
+    // (Pistol...) Jump Animation:
+    //
+    private static readonly int _JUMP_ANIMATION_ANIMATION_PARAMETER_ID = Animator.StringToHash("Pistol Jump");
     
     // Smooth Damp Input System (for a smooth transitioning between each movement):
     //
@@ -74,6 +78,9 @@ public class PlayerController : MonoBehaviour
     //
     [Tooltip("Current Player Animations Blending SMOOTH TIME value. The Smaller the value, the Faster the transitions between different Input Actions (and Animations) will be")]
     [SerializeField] private float _playerAnimationRunStrafeSmoothTime = 0.1f;
+
+    [Tooltip("Current Player Animation's TRANSITION TIME value. The Smaller the value, the Faster the transitions between different Animations will be")]
+    [SerializeField] private float _playerAnimationRunToPistolJumpTransitionTime = 0.15f;
 
     #endregion Animations
 
@@ -141,7 +148,7 @@ public class PlayerController : MonoBehaviour
         // Get (New) input System's Control player actions:
         _inputControlAction = _playerMoveInputAction.ReadValue<Vector2>();
         //
-        // Move the Player's 3D Character (Animations Blending Tree) using the Smoothing Animations Blending CURRENT VALUE:
+        // Apply a SOFTENING / SMOOTHING REDUCTION of the INTENSITY of the INPUT received over Time (e.g.: an raw INPUT = [ (X, Y) = ( -0.7, -1 ) ] ...and then suddenly the player changes to [ ( 1, 1 ) !!! ]... so instead of using one FRAME = ( -0.7, -1 ) AND THE NEXT FRAME => ( 1, 1 )... we would SOFTEN the VALUE of that FRAME to = ( -0.6, -0.9 ) ): To Move the Player's 3D Character (Animations Blending Tree) using the Smoothing Animations Blending CURRENT VALUE:
         //
         _currentPlayerAnimationsRunStrafeBlendVector2 = Vector2.SmoothDamp(_currentPlayerAnimationsRunStrafeBlendVector2, _inputControlAction, ref _playerAnimationsRunStrafeVelocity, _playerAnimationRunStrafeSmoothTime);
         
@@ -183,6 +190,11 @@ public class PlayerController : MonoBehaviour
         if (_playerJumpInputAction.triggered && _playerIsGrounded)
         {
             _playerVelocity.y += Mathf.Sqrt(_playerJumpHeight * -3.0f * _gravityValue);
+            
+            // ANIMATIONS:
+            // 1- Pistol JUMP:
+            //
+            _playerAnimator.CrossFade(_JUMP_ANIMATION_ANIMATION_PARAMETER_ID, _playerAnimationRunToPistolJumpTransitionTime);
         }
 
         _playerVelocity.y += _gravityValue * Time.deltaTime;
