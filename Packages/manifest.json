@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "com.unity.animation.rigging": "1.2.0",
+    "com.unity.burst": "1.7.4",
     "com.unity.cinemachine": "2.6.15",
     "com.unity.collab-proxy": "1.15.18",
     "com.unity.ext.nunit": "1.0.0",
@@ -9,7 +11,7 @@
     "com.unity.postprocessing": "2.2.2",
     "com.unity.quicksearch": "2.0.2",
     "com.unity.recorder": "2.5.7",
-    "com.unity.test-framework": "1.1.31",
+    "com.unity.test-framework": "1.1.33",
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.timeline": "1.4.8",
     "com.unity.toolchain.linux-x86_64": "2.0.2",
