@@ -230,52 +230,60 @@ public class PlayerController : MonoBehaviour
         // Bullet Prefab Instantiation:
         // NOTE: TODO TO-DO: To make an OBJECT POOL for Optimizing this one:
         //
-        GameObject bullet = GameObject.Instantiate(_playerBulletPrefab, _gunBarrelTransform.position, Quaternion.identity, _playerBulletParentTransform);
-            
-        // Optimization TO-DO TODO: Set this BulletController.cs as an Interface, and make sure ALL BULLETS ALWAYS have a Bullet Controller!!!
-        //
-        BulletController bulletController = bullet.GetComponent<BulletController>();
-
-        
-        RaycastHit raycastHit;
-        //
-        // We'll shoot the Raycast Vector3 from the Center of the Main Camera, forwards in a Straight Line (in Spanish: 'en una Linea Recta' ;)
-        //
-        if (Physics.Raycast(_mainCameraTransform.position, _mainCameraTransform.forward, out raycastHit,
-                Mathf.Infinity))
+        if (_playerBulletPrefab && _gunBarrelTransform && _playerBulletParentTransform)
         {
+            GameObject bullet = GameObject.Instantiate(_playerBulletPrefab, _gunBarrelTransform.position,
+                Quaternion.identity, _playerBulletParentTransform);
 
-            if (bulletController)
-            {
-                // Assign the Collision Object to my: Target (a Vector3 attribute)
-                //
-                bulletController.Target = raycastHit.point;
-                //
-                // State that there was a Collision: true
-                //
-                bulletController.IsThereABulletHit = true;
-
-            }// End if (bulletController)
-        }
-        else
-        {
-            // No collision
+            // Optimization TO-DO TODO: Set this BulletController.cs as an Interface, and make sure ALL BULLETS ALWAYS have a Bullet Controller!!!
             //
-            if (bulletController)
-            {
-                // Assign the Collision Object to my: Target (a Vector3 attribute).
-                // PROBLEM: THere is NO COLLISION, so we are going to fake it: using the Camera forward vector3 + an ARBITRARY DISTANCE: we will say it disappear after travelling some distance...
-                //
-                bulletController.Target = _mainCameraTransform.position + _mainCameraTransform.forward * _bulletHitMissDistance;
-                //
-                // State that there was a Collision: true
-                //
-                bulletController.IsThereABulletHit = false;
-
-            }// End if (bulletController)     
+            BulletController bulletController = bullet.GetComponent<BulletController>();
             
-        }// End else of if (Physics.Raycast....) - Collision!
-        
+            
+            RaycastHit raycastHit;
+            //
+            // We'll shoot the Raycast Vector3 from the Center of the Main Camera, forwards in a Straight Line (in Spanish: 'en una Linea Recta' ;)
+            //
+            if (Physics.Raycast(_mainCameraTransform.position, _mainCameraTransform.forward, out raycastHit,
+                    Mathf.Infinity))
+            {
+
+                if (bulletController)
+                {
+                    // Assign the Collision Object to my: Target (a Vector3 attribute)
+                    //
+                    bulletController.Target = raycastHit.point;
+                    //
+                    // State that there was a Collision: true
+                    //
+                    bulletController.IsThereABulletHit = true;
+
+                }// End if (bulletController)
+            }
+            else
+            {
+                // No collision
+                //
+                if (bulletController)
+                {
+                    // Assign the Collision Object to my: Target (a Vector3 attribute).
+                    // PROBLEM: THere is NO COLLISION, so we are going to fake it: using the Camera forward vector3 + an ARBITRARY DISTANCE: we will say it disappear after travelling some distance...
+                    //
+                    bulletController.Target = _mainCameraTransform.position + _mainCameraTransform.forward * _bulletHitMissDistance;
+                    //
+                    // State that there was a Collision: true
+                    //
+                    bulletController.IsThereABulletHit = false;
+
+                }// End if (bulletController)     
+            
+            }// End else of if (Physics.Raycast....) - Collision!
+            
+        }
+        // else
+        // {
+        // }
+
     }// End private void ShootGun()
 
     #endregion AlMartson's Custom Methods
