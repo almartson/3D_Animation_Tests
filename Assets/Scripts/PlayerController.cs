@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[RequireComponent(typeof(CharacterController), typeof(PlayerInput))]
+[RequireComponent(typeof(CharacterController), typeof(PlayerInput), typeof(Animator))]
 public class PlayerController : MonoBehaviour
 {
     [SerializeField]
