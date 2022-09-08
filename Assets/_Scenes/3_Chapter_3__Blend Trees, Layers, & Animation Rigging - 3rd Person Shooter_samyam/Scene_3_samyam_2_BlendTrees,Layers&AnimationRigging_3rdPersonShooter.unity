@@ -200,15 +200,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.8634095
+      value: 1.2354734
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.3585963
+      value: 2.8585963
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.1685648
+      value: -7.189994
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalRotation.w
@@ -382,15 +382,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.8527837
+      value: 2.9550514
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.1532347
+      value: 2.6532345
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.64386016
+      value: -9.134487
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalRotation.w
@@ -460,7 +460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 205702954}
   - component: {fileID: 205702955}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -708,7 +708,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470736998}
   m_LocalRotation: {x: 0, y: -0.02905564, z: 0, w: 0.9995778}
-  m_LocalPosition: {x: 6.8527837, y: 2.1532347, z: -0.64386016}
+  m_LocalPosition: {x: 2.9550514, y: 2.6532345, z: -9.134487}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -787,6 +787,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 678069532}
+  - component: {fileID: 678069533}
   m_Layer: 0
   m_Name: UnityRig_LeftHandIK
   m_TagString: Untagged
@@ -808,6 +809,30 @@ Transform:
   m_Father: {fileID: 1074662086}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &678069533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678069531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeda7bfbf984f2a4da5ab4b8967b115d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Weight: 1
+  m_Data:
+    m_Root: {fileID: 0}
+    m_Mid: {fileID: 0}
+    m_Tip: {fileID: 0}
+    m_Target: {fileID: 0}
+    m_Hint: {fileID: 0}
+    m_TargetPositionWeight: 1
+    m_TargetRotationWeight: 1
+    m_HintWeight: 1
+    m_MaintainTargetPositionOffset: 0
+    m_MaintainTargetRotationOffset: 0
 --- !u!1 &737443257 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4222293097015963402, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
@@ -1374,7 +1399,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1471743911}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ref_grip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1388,13 +1413,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471743910}
-  m_LocalRotation: {x: -0.40029886, y: -0.5789351, z: -0.55283165, w: 0.44606295}
-  m_LocalPosition: {x: -0.004, y: -0.29, z: -0.36}
+  m_LocalRotation: {x: -0.4594767, y: -0.5329728, z: -0.46710688, w: 0.53538054}
+  m_LocalPosition: {x: -0.038, y: -0.278, z: -0.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 205702954}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -85.73, y: -82.91, z: -23.51}
+  m_LocalEulerAnglesHint: {x: -81.85, y: -86.1, z: -4.2}
 --- !u!1001 &1500707894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1458,9 +1483,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3111565609762313623, guid: 0900bf58f40bf19fbbfa7de99d470a0b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -242165637326713887, guid: 0900bf58f40bf19fbbfa7de99d470a0b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0900bf58f40bf19fbbfa7de99d470a0b, type: 3}
       propertyPath: m_Name
       value: pistol
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0900bf58f40bf19fbbfa7de99d470a0b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6619225641134156614, guid: 0900bf58f40bf19fbbfa7de99d470a0b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0900bf58f40bf19fbbfa7de99d470a0b, type: 3}
@@ -1949,12 +1990,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
-  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
-    are already bound by a Humanoid avatar. These transforms can only be changed
-    by Humanoid clips.\n\tTransform 'swat:RightHand'\n\tTransform 'swat:RightForeArm'\n\tTransform
-    'swat:RightArm'\n\tTransform 'swat:RightHand'\n\tTransform 'swat:RightForeArm'\n\tTransform
-    'swat:RightArm'\n\tTransform 'swat:RightHand'\n\tTransform 'swat:RightForeArm'\n\tTransform
-    'swat:RightArm'"
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
