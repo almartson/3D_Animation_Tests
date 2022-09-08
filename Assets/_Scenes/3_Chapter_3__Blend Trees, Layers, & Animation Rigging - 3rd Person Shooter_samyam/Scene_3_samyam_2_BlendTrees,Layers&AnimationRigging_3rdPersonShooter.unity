@@ -827,7 +827,7 @@ MonoBehaviour:
     m_Root: {fileID: 7835633816330795790}
     m_Mid: {fileID: 2111152164212415345}
     m_Tip: {fileID: 238493469116724097}
-    m_Target: {fileID: 0}
+    m_Target: {fileID: 1744620951}
     m_Hint: {fileID: 1760784811}
     m_TargetPositionWeight: 1
     m_TargetRotationWeight: 1
@@ -1401,7 +1401,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1471743911}
   m_Layer: 6
-  m_Name: ref_right_hand_grip
+  m_Name: ref_target_right_hand_grip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1636,7 +1636,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1744620951}
   m_Layer: 6
-  m_Name: ref_left_hand_grip
+  m_Name: ref_target_left_hand_grip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
