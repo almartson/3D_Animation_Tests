@@ -82,6 +82,19 @@ public class PlayerController : MonoBehaviour
     [Tooltip("Current Player Animation's TRANSITION TIME value. The Smaller the value, the Faster the transitions between different Animations will be")]
     [SerializeField] private float _playerAnimationRunToPistolJumpTransitionTime = 0.15f;
 
+    
+    #region Animations & Movements using: Animation Rigging Package
+    
+    // How to Move the 3D Character's Orientation (the AIMING), while Aiming using KeyBoard & Mouse (or ANY Control / Gamepad):
+    //
+    [Tooltip("Target for: Moving the 3D Character's Orientation (the AIMING), while Aiming using KeyBoard & Mouse (or ANY Control / Gamepad)")]
+    [SerializeField] private Transform _playerAnimRiggingAimTarget;
+    
+    [Tooltip("Distance to the Target '_playerAnimRiggingAimDistance' for: Moving the 3D Character's Orientation (the AIMING)...")]
+    [SerializeField] private float _playerAnimRiggingAimDistance = 1.0f;
+
+    #endregion Animations & Movements using: Animation Rigging Package
+
     #endregion Animations
 
 
@@ -138,6 +151,21 @@ public class PlayerController : MonoBehaviour
     
     void Update()
     {
+        
+        #region Animations & Movements using: Animation Rigging Package
+        
+        // How to Move the 3D Character's Orientation (the AIMING), while Aiming using KeyBoard & Mouse (or ANY Control / Gamepad):
+        // AIMING Animation, changing the Character's Body Position / Orientation:
+        //
+        _playerAnimRiggingAimTarget.position =
+            _mainCameraTransform.position + _mainCameraTransform.forward * _playerAnimRiggingAimDistance;
+        
+        
+        #endregion Animations & Movements using: Animation Rigging Package
+        
+        
+        // Check to see the actual State (Mathematical) of the Player in the Scene:
+        //
         _playerIsGrounded = _playerCharacterController.isGrounded;
         if (_playerIsGrounded && _playerVelocity.y < 0)
         {
