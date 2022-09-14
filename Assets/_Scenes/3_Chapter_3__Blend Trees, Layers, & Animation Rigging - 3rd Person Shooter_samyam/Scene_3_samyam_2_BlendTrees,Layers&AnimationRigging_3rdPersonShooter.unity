@@ -1373,7 +1373,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1149089629}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2.6, y: 2.2, z: 6.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1366576454}
@@ -2337,7 +2337,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
-  m_WarningMessage: 
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed
+    by Humanoid clips.\n\tTransform 'swat:Neck1'\n\tTransform 'swat:Hips'\n\tTransform
+    'swat:Spine'\n\tTransform 'swat:RightHand'\n\tTransform 'swat:LeftHand'\n\tTransform
+    'swat:RightForeArm'\n\tTransform 'swat:LeftArm'\n\tTransform 'swat:LeftForeArm'\n\tTransform
+    'swat:RightArm'\n\tTransform 'swat:Neck'\n\tand more ..."
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
