@@ -2551,6 +2551,7 @@ MonoBehaviour:
   _playerAnimationsRunStrafeVelocity: {x: 0, y: 0}
   _playerAnimationRunStrafeSmoothTime: 0.1
   _playerAnimationRunToPistolJumpTransitionTime: 0.15
+  _playerAnimationAnyStateToPistolShootRecoilTransitionTime: 0.1
   _playerAnimRiggingAimTarget: {fileID: 1149089630}
   _playerAnimRiggingAimDistance: 10
 --- !u!143 &2117009767

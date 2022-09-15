@@ -64,7 +64,12 @@ public class PlayerController : MonoBehaviour
     //
     // (Pistol...) Jump Animation:
     //
-    private static readonly int _JUMP_ANIMATION_ANIMATION_PARAMETER_ID = Animator.StringToHash("Pistol Jump");
+    private static readonly int _JUMP_ANIMATION_PARAMETER_ID = Animator.StringToHash("Pistol Jump");
+    //
+    // Pistol Shoot RECOIL Animation:
+    //
+    private static readonly int _PISTOL_SHOOT_RECOIL_ANIMATION_PARAMETER_ID = Animator.StringToHash("Pistol Shoot Recoil 1");
+    
     
     // Smooth Damp Input System (for a smooth transitioning between each movement):
     //
@@ -82,6 +87,9 @@ public class PlayerController : MonoBehaviour
     [Tooltip("Current Player Animation's TRANSITION TIME value. The Smaller the value, the Faster the transitions between different Animations will be")]
     [SerializeField] private float _playerAnimationRunToPistolJumpTransitionTime = 0.15f;
 
+    [Tooltip("Current Player Animation's TRANSITION TIME value to go FROM: ANY STATE... TO: PISTOL SHOOT RECOIL animation. The Smaller the value, the Faster the transitions between different Animations will be")]
+    [SerializeField] private float _playerAnimationAnyStateToPistolShootRecoilTransitionTime = 0.1f;
+    
     
     #region Animations & Movements using: Animation Rigging Package
     
@@ -92,6 +100,8 @@ public class PlayerController : MonoBehaviour
     
     [Tooltip("Distance to the Target '_playerAnimRiggingAimDistance' for: Moving the 3D Character's Orientation (the AIMING)...")]
     [SerializeField] private float _playerAnimRiggingAimDistance = 1.0f;
+
+
 
     #endregion Animations & Movements using: Animation Rigging Package
 
@@ -222,7 +232,7 @@ public class PlayerController : MonoBehaviour
             // ANIMATIONS:
             // 1- Pistol JUMP:
             //
-            _playerAnimator.CrossFade(_JUMP_ANIMATION_ANIMATION_PARAMETER_ID, _playerAnimationRunToPistolJumpTransitionTime);
+            _playerAnimator.CrossFade(_JUMP_ANIMATION_PARAMETER_ID, _playerAnimationRunToPistolJumpTransitionTime);
         }
 
         _playerVelocity.y += _gravityValue * Time.deltaTime;
@@ -312,6 +322,10 @@ public class PlayerController : MonoBehaviour
         // {
         // }
 
+        // Play the Recoil Animation (i.e., a.k.a.: the Pistol Shoot):
+        //
+        _playerAnimator.CrossFade(_PISTOL_SHOOT_RECOIL_ANIMATION_PARAMETER_ID, _playerAnimationAnyStateToPistolShootRecoilTransitionTime);
+        
     }// End private void ShootGun()
 
     #endregion AlMartson's Custom Methods
