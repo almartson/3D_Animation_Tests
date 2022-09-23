@@ -92,7 +92,7 @@ AlMartson
 
 <div align="center">
 
-| <b> :warning: Warning: Broken repository since August 20th, 2022 :construction: </b> |
+| <b> :warning: Warning: Broken repository :construction_worker: since August 20th, 2022 :construction: </b> |
 |:--:|
 | <div align="justified"> GitHub asked me to pay them for the use of GIT-LFS, even when I respected the Free-tier limits (I have an e-mail[^1] that proves it). <br /></b> It seems that they also have another restriction called "Bandwidth", which doesn't allow you to upload more than 1 GB of data to the LFS Server during a certain period of time, but it was miscalculated in my case: the total amount of data I uploaded until now was 0.23 GB (and it stated that the "Bandwidth" has surpased the 1 GB limit... how is that possible?).</b> </b> None of these limits and restrictions were prevously stated before starting with the Service.| <br /> <br />
 
