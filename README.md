@@ -112,20 +112,21 @@ AlMartson
 ********************************
 
 
-[^1]: An extract of the e-mail I received:
+[^1]:
+   An extract of the e-mail I received:
 
-From: support@github.com
+   From: support@github.com
 
-Git LFS disabled for almartson:
+   Subject: Git LFS disabled for almartson:
 
-Git LFS has been disabled on your personal account almartson because you’ve exceeded your data plan by at least 150%. Please purchase additional data packs to cover your bandwidth and storage usage:
+   Git LFS has been disabled on your personal account almartson because you’ve exceeded your data plan by at least 150%. Please purchase additional data packs to cover your bandwidth and storage usage:
 
-  https://github.com/account/billing/data/upgrade
+     https://github.com/account/billing/data/upgrade
 
-Current usage as of 21 Aug 2022 02:12AM UTC:
+   Current usage as of 21 Aug 2022 02:12AM UTC:
 
-  Bandwidth: 1.5 GB / 1 GB (150%)
-  Storage: 0.23 GB / 1 GB (23%)
+     Bandwidth: 1.5 GB / 1 GB (150%)
+     Storage: 0.23 GB / 1 GB (23%)
 
 
 ********************************
