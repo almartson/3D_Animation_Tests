@@ -2,6 +2,26 @@
 
 ---
 
+<div align="center">
+
+| <b> :warning: Warning: Broken repository since August 20th, 2022 :construction: </b> |
+|:--:|
+| <div align="justified"> GitHub asked me to pay them for the use of GIT-LFS, even when I respected the Free-tier limits (I have an e-mail[^1] that proves it). <br /></b> It seems that they also have another restriction called "Bandwidth", which doesn't allow you to upload more than 1 GB of data to the LFS Server during a certain period of time, but it was miscalculated in my case: the total amount of data I uploaded until now was 0.23 GB (and it stated that the "Bandwidth" has surpased the 1 GB limit... how is that possible?).</b> </b> None of these limits and restrictions were prevously stated before starting with the Service.| <br /> <br />
+
+   My options to share my projects (implementing the Git-LFS functionality): <br /> <br />
+   
+   1- To migrate the Project to another Repository (outside GitHub). Or...<br />
+   2- To disable GIT-LFS for this Repository. My multimedia data is kidnaped in that Server until I pay to release it.<br /> <br />
+   
+  My decision: <br /> <br />
+   
+   For now I will be looking for another option for Hosting the Repository (one that uses GIT-LFS), while working and studyng using my Local Repo. Sadly I won't be sharing my progress with the World, nevertheless I will alwasy keep on progressing with new demos every week, using my local server. <br /> <br />
+   </div>
+
+</div>
+
+---
+
 ## What is this Project?
 
 It is a series of simple experiments, (a work in progress), about :movie_camera: **3D Animations** :cinema:. It is made with Unity3D, just for the fun of it and as a part of my self-learning journey.
@@ -86,6 +106,23 @@ The subject studied in this project consists of two main parts:
 Peace.
 
 AlMartson
+
+********************************
+
+[^1]: An extract of the e-mail I received:
+
+From: support@github.com
+
+Git LFS disabled for almartson:
+
+Git LFS has been disabled on your personal account almartson because you’ve exceeded your data plan by at least 150%. Please purchase additional data packs to cover your bandwidth and storage usage:
+
+  https://github.com/account/billing/data/upgrade
+
+Current usage as of 21 Aug 2022 02:12AM UTC:
+
+  Bandwidth: 1.5 GB / 1 GB (150%)
+  Storage: 0.23 GB / 1 GB (23%)
 
 ********************************
 
