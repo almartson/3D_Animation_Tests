@@ -93,7 +93,7 @@ AlMartson
 
 ********************************
 
-[^1]: :construction:
+[^1]: <b> :warning: Warning: Broken repository :construction_worker: since August 20th, 2022 :construction: </b>
 
 <div align="center">
 
@@ -116,9 +116,7 @@ AlMartson
 
 ********************************
 
-
-[^2]:
-   An extract of the e-mail I received:
+[^2]: An extract of the e-mail I received:   
 
    From: support@github.com
 
