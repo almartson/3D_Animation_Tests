@@ -200,7 +200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.5950364
+      value: 0.42691565
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalPosition.y
@@ -208,7 +208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.1690726
+      value: -7.2370396
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalRotation.w
@@ -382,7 +382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.8225682
+      value: 1.0042453
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalPosition.y
@@ -390,7 +390,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.084011
+      value: -9.247994
       objectReference: {fileID: 0}
     - target: {fileID: 4222293097015963400, guid: bbcf5a8e526a680a58b9688a4f520a69, type: 3}
       propertyPath: m_LocalRotation.w
@@ -663,7 +663,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470736998}
   m_LocalRotation: {x: 0, y: -0.02905564, z: 0, w: 0.9995778}
-  m_LocalPosition: {x: 3.8225682, y: 2.6532345, z: -9.084011}
+  m_LocalPosition: {x: 1.0042453, y: 2.6532345, z: -9.247994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1683,6 +1683,34 @@ PrefabInstance:
     - target: {fileID: 3925864165591112925, guid: 1383f5c282829fe08a1bac381651836f, type: 3}
       propertyPath: m_Name
       value: Player__SWAT_Soldier_AvatarAndAnimation
+      objectReference: {fileID: 0}
+    - target: {fileID: 3925864167336880194, guid: 1383f5c282829fe08a1bac381651836f, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3925864167350300654, guid: 1383f5c282829fe08a1bac381651836f, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4024220398080297405, guid: 1383f5c282829fe08a1bac381651836f, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246544644892091967, guid: 1383f5c282829fe08a1bac381651836f, type: 3}
+      propertyPath: m_Weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246544644892091967, guid: 1383f5c282829fe08a1bac381651836f, type: 3}
+      propertyPath: m_Data.m_MaxLimit
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246544644892091967, guid: 1383f5c282829fe08a1bac381651836f, type: 3}
+      propertyPath: m_Data.m_MinLimit
+      value: -17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5246544644892091967, guid: 1383f5c282829fe08a1bac381651836f, type: 3}
+      propertyPath: m_Data.m_MaintainOffset
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1383f5c282829fe08a1bac381651836f, type: 3}
