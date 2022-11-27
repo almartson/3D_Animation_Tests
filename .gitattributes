@@ -154,6 +154,10 @@
 
 # Note:
 
+# 0- For enabling Git-LFS:
+#   .1- Uncomment the Comented lines above containing the Keyword: lfs
+#   .2- Verify that you have Git-LFS installed for this repo, and Enabled for this Repo, and for GitKraken Cliente as well (Google search).
+
 # 1- When making changes to .gitattributes, files must be un-staged and re-staged for changes to be applied:
 
 # git reset HEAD --
