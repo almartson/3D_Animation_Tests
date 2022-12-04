@@ -75,9 +75,9 @@ The subject studied in this project consists of two main parts:
 ## Version control specs: 
 
 * **Git Client**: GitKraken >= 8.7.0
-* This Repository is set with: *Git Large File Storage* (**Git-LFS**), as part of the learning & experiment (see .gitattributes).
-    * Using **File Locking** feature.
-    * **Git-lfs** version **>=** 2.9.2 (GitHub; linux amd64; go 1.13.5)
+* This Repository ~~is~~ _was_ set with: *Git Large File Storage* (**Git-LFS**), as part of the learning & experiment (see .gitattributes).
+    * ~~Using **File Locking** feature.~~
+    * ~~**Git-lfs** version **>=** 2.9.2 (GitHub; linux amd64; go 1.13.5)~~
     * **Git** version **>=** 2.37.1
 
 
