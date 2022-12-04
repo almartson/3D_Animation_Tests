@@ -75,7 +75,7 @@ The subject studied in this project consists of two main parts:
 ## Version control specs: 
 
 * **Git Client**: GitKraken: 8.7.0
-* This Repository is set with: *Git Large File Storage* (**Git-LFS**), as part of the learning & experiment (see .gitattributes).
+* This Repository is set with: *Git Large File Storage* (**Git-LFS**), as part of the learning & experiment (see .gitattributes).
     * Using **File Locking** feature.
     * **Git-lfs** version **>=** 2.9.2 (GitHub; linux amd64; go 1.13.5)
     * **Git** version **>=** 2.37.1
@@ -100,3 +100,4 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
+
